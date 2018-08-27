@@ -1,0 +1,161 @@
+
+@font-face{
+	font-family:"NanumSquareR";
+	src: url("../font/NanumSquareR.eot"); /* IE9 Compat Modes */
+	src: url("../font/NanumSquareR.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ 
+	url("../font/NanumSquareR.woff") format("woff"), /* Modern Browsers */
+	url("../font/NanumSquareR.woff2") format("woff2"), 
+	url("../font/NanumSquareR.ttf") format("truetype") /* Safari, Android, iOS */
+}
+
+@font-face{
+	font-family:"NanumSquareB";
+	src: url("../font/NanumSquareB.eot"); /* IE9 Compat Modes */
+	src: url("../font/NanumSquareB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ 
+	url("../font/NanumSquareB.woff") format("woff"), /* Modern Browsers */
+	url("../font/NanumSquareB.woff2") format("woff2"), 
+	url("../font/NanumSquareB.ttf") format("truetype") /* Safari, Android, iOS */
+}
+
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-family:"Dotum","돋움";
+	font-size: 12px;
+	word-break:keep-all; 
+}
+h1,h2,h3,h4,h5,h6{
+	line-height: 1.2;
+	font-weight:normal;
+}
+a,a:active,a:target,a:link{
+	outline:none;
+	text-decoration:none;
+}
+a:hover {text-decoration: underline}
+ul{
+	overflow: auto;
+	overflow-y: hidden;
+	margin:0; 
+	padding:0;
+}
+li{list-style:none}
+p{margin-top:0;}
+.img-responsive{
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+hr{
+	display: block;
+	margin: 0;
+	box-shadow: none;
+	border: none;
+}
+
+.pageAfter{page-break-after: always}
+.pageBefore{page-break-before: always}
+
+/*-------------------------------/기본 스타일----------------------------------*/
+
+#tableWrap{
+	clear: both;
+	margin-bottom: 30px;
+}
+
+table{
+	width: 100%;
+	border-top: 2px solid #536372;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table th,table .tit{
+	height: 45px;
+	background: #f8f8f8;
+	font-weight: bold;
+}
+
+table td,table th{
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #dcdcdc;
+	border-left: none;
+	box-sizing: border-box;
+	vertical-align: middle
+}
+table td{
+	height: 40px;
+}
+
+table td:last-child,table th:last-child{border-right: none;}
+table .borderN{
+	border-right: none;
+}
+table tr.total td{
+	background: #f8f8f8;
+	font-weight: bold;
+	color: #0069ab;
+}
+
+table .bold{font-weight: bold;}
+
+/*----------------------------/table 기본 ----------------------------------*/
+
+input{
+	height:30px;
+	padding-left:5px;
+	padding-right:5px;
+	box-shadow:none;
+	border:1px solid #dfdfdf;
+	border-radius:0;
+	font-family:"Dotum","돋움";
+	font-size:12px;
+	font-weight:bold;
+	color:#369170;
+	text-align:center
+}
+
+input[readonly]{background: #eee;}
+
+/*-----------------------------/ input 기본 --------------------------------*/
+
+select{
+	width:160px;
+	height:40px;
+	padding-left:10px;
+	padding-right: 10px;
+	background:url(../images/selectBg.png) no-repeat right 10px center;
+	border:1px solid #dfdfdf;
+	border-radius:0;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	font-family: "Dotum","돋움";
+	font-size: 12px;
+	color: #000;
+	cursor: pointer
+}
+select::-ms-expand{display:none;} 
+
+@media \0screen{
+	select{background-image: none}
+}/*-ie8핵-*/
+
+/*-----------------------------/ select 기본 -------------------------------*/
+
+/*- 반응형 -*/
+
+@media (max-width:1040px) {
+	
+}
